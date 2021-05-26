@@ -5,7 +5,7 @@
 <script>
 export default {
   validate(data) {
-    //check if the id is numeric value (while URL is loaded)
+    //check if the id is numeric value (ID URL)
     return /^\d+$/.test(data.params.id);
   }
 }
