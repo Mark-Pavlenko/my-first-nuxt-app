@@ -4,6 +4,8 @@
 
 <script>
 export default {
+  layout: 'users',
+
   validate(data) {
     //check if the id is numeric value (ID URL)
     return /^\d+$/.test(data.params.id);

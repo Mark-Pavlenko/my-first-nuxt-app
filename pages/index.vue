@@ -1,12 +1,14 @@
 <template>
-
+  <div class="container">
+    <router-link to="/users">Users</router-link>
+  </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue';
 
 export default {
-  components:{
+  components: {
     Logo
   }
 }

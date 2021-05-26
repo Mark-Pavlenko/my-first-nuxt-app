@@ -2,22 +2,23 @@
   <div class="container">
     <input type="text" v-model="userId">
     <button @click="onLoadUser">Load user</button>
-    <nuxt-child />
+    <nuxt-child/>
   </div>
 </template>
 
 <script>
 export default {
-  data(){
-    return{
+  data() {
+    return {
       userId: ''
     }
   },
-  methods:{
-    onLoadUser(){
+  methods: {
+    onLoadUser() {
       this.$router.push('/users/' + this.userId)
     }
-  }
+  },
+  layout: 'users'
 }
 
 </script>
